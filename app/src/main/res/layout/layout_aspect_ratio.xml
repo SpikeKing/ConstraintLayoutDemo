@@ -11,6 +11,7 @@
         android:layout_height="200dp"
         android:background="@color/colorAccent"
         android:src="@drawable/total_large"
+        app:layout_constraintDimensionRatio="16:9"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
         app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
         app:layout_constraintRight_toRightOf="@+id/constraintLayout"

@@ -10,20 +10,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Center"
-        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/constraintLayout"/>
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bias"
-        app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
         app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="@id/constraintLayout"
-        app:layout_constraintTop_toTopOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintVertical_bias="0.25"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // 项名称
     private static final String[] LIST_ITEMS = {
             "Base",
             "Bias",
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
             "Aspect Ratio"
     };
 
+    // 项布局Id
     private static final int[] LAYOUT_IDS = {
             R.layout.layout_base,
             R.layout.layout_bias,
@@ -38,12 +40,10 @@ public class MainActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
                 // 复用显示布局
                 Intent intent = new Intent(MainActivity.this, LayoutDisplayActivity.class);
-                intent.putExtra(Intent.EXTRA_TITLE, LIST_ITEMS[i]);
-                intent.putExtra(LayoutDisplayActivity.EXTRA_LAYOUT_ID, LAYOUT_IDS[i]);
-
+                intent.putExtra(Intent.EXTRA_TITLE, LIST_ITEMS[i]); // 标题
+                intent.putExtra(LayoutDisplayActivity.EXTRA_LAYOUT_ID, LAYOUT_IDS[i]); // 布局Id
                 startActivity(intent);
             }
         });
