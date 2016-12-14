@@ -4,13 +4,14 @@
 
 > 使用ConstraintLayout的最新版本``1.0.0-alpha4``, 则要下载最新Canary版本的**[Android Studio](https://sites.google.com/a/android.com/tools/download/studio/builds/2-2-preview-6)**.
 
+---
+
 ## 概念
 
 ConstraintLayout约束布局的含义: 根据布局中的其他元素或视图, 确定View在屏幕中的位置. 包含三个重要信息, 根据其他视图设置位置, 根据父容器设置位置, 根据基准线设置位置.
 
 ```
 layout_constraint[本源]_[目标]="[目标ID]"
-
 ```
 
 例如: 
