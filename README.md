@@ -1,12 +1,8 @@
-# ConstraintLayout 约束布局的概念与使用
+# 探索约束布局(ConstraintLayout)概念与使用
 
-ConstraintLayout(约束布局), 是2016年``Google I/O``最新推出的Android布局, 目前还在完善阶段. 从推出的力度而言, 应该会成为主流布局样式. 在最新版本的``Android Studio``中, ConstraintLayout已经成为默认布局. 
+**ConstraintLayout(约束布局)**, 是2016年Google I/O推出的Android布局, 目前还在完善阶段. 从推出的力度而言, 预计会成为主流布局样式. 在最新版本的Android Studio中, ConstraintLayout已替代RelativeLayout, 成为HelloWorld项目的默认布局.  ConstraintLayout作为**非绑定(Unbundled)的支持库**, 命名空间是``app:``, 即来源于本地的包命名空间. 本文介绍ConstraintLayout的概念与使用.
 
-> 使用ConstraintLayout布局的最新版本``1.0.0-alpha4``, 需要下载最新Canary版本的``Android Studio``, [下载地址](https://sites.google.com/a/android.com/tools/download/studio/builds/2-2-preview-6).
-
-ConstraintLayout作为非绑定(Unbundled)的支持库, 命名空间是``app:``, 来自于本地包的命名空间. 本文介绍``ConstraintLayout``布局的常见使用方式.
-
-本文源码的GitHub[下载地址](https://github.com/SpikeKing/ConstraintLayoutDemo)
+> 使用ConstraintLayout的最新版本``1.0.0-alpha4``, 则要下载最新Canary版本的**[Android Studio](https://sites.google.com/a/android.com/tools/download/studio/builds/2-2-preview-6)**.
 
 ## 概念
 
