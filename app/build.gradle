@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "org.wangchenlong.constraintlayoutdemo"
         minSdkVersion 17
@@ -26,6 +26,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.1.1'
     // 默认添加ConstraintLayout的依赖
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 }

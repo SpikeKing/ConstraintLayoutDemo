@@ -31,16 +31,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);  // 布局
 
-        ListView list = (ListView) findViewById(R.id.activity_main);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, LIST_ITEMS);
+        ListView list = (ListView) findViewById(R.id.activity_main);  // 列表控件
+        ArrayAdapter<String> adapter =
+                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, LIST_ITEMS);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                // 复用显示布局
+                // 复用页面，显示不同的布局样式
                 Intent intent = new Intent(MainActivity.this, LayoutDisplayActivity.class);
                 intent.putExtra(Intent.EXTRA_TITLE, LIST_ITEMS[i]); // 标题
                 intent.putExtra(LayoutDisplayActivity.EXTRA_LAYOUT_ID, LAYOUT_IDS[i]); // 布局Id
